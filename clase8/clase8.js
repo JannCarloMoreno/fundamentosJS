@@ -31,7 +31,7 @@ function cumpleanos(persona){
     return(
         {
             ...persona,
-            edad: persona.edad+1
+            edad:    persona.edad+1
         }
     )
 }
