@@ -3,7 +3,6 @@ const PEOPLE_URL = 'people/:id'
 const opts = { crossDomain: true }
 
 function obtenerPersonaje (id){
-
     return new Promise((resolve, reject)=> {
         const url = `${API_URL}${PEOPLE_URL.replace(':id',id)}`
         $
@@ -11,10 +10,7 @@ function obtenerPersonaje (id){
                 resolve(data)
             })
             .fail(() =>{reject(id)})
-
     })
-
-
 }
 
 function onError(id){
